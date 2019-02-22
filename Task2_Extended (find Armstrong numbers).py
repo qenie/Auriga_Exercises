@@ -1,16 +1,22 @@
-print("The following program will search for Armstrong numbers in the [1, N] range, where N number you should enter")
-input_value = input("Input N:")
+# This program will find Armstrong numbers in the range of [1, N], where N input munber
+# Armstrong example of number is 153 = 1^3+5^3+3^3 (where 3 is number digits)
 
-for i in range(input_value)
-string = input("Enter number:")
-input_value = int(string)
 
 def armstrong_number(number):
+    calculated_value = 0
+    input_string = str(number)
+    digits = len(str(number))
+    for i in range(digits):
+        calculated_value += int(input_string[i]) ** digits
+    if calculated_value == int(number):
+        return "YES"
+    else:
+        return "NO"
 
-for i in range(index):
- calculated_value += int(string[i])**index
 
-if calculated_value == input_value:
-    print("YES")
-else:
-    print("NO")
+print("The program will find Armstrong numbers in the range of [1,N]")
+input_number = input("Enter N: ")
+
+for j in range(int(input_number)):
+    if armstrong_number(j) == "YES":
+        print(j)
