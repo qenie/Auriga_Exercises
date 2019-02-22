@@ -1,4 +1,4 @@
-# The task was to find amount of "Bad boys" (represented  by '=o' symbols) and "Good boys" (represented by 'o='
+# The task is to find amount of "Bad boys" (represented  by '=o' symbols) and "Good boys" (represented by 'o='
 # symbols) in the given string. There is also Santa (represented by 'd' symbol) but actually 'd' symbol treated just
 # like other symbols (not sufficient).
 
