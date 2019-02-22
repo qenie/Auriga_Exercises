@@ -1,6 +1,3 @@
-string = input("Enter number:")
-input_value = int(string)
-
 def armstrong_number(number):
    calculated_value = 0
    index = len(str(number))
