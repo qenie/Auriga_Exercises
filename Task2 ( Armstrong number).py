@@ -1,17 +1,19 @@
-string = input("Enter number:")
-input_value = int(string)
+# This project defines function to check if the number is Armstrong number
+# Armstrong example of number is 153 = 1^3+5^3+3^3 (where 3 is number digits)
+
+input_number = input("Enter a number: ")
+
 
 def armstrong_number(number):
-   calculated_value = 0
-   index = len(str(number))
-   for i in range(index):
-     calculated_value += int(str[i])**index
+    calculated_value = 0
+    input_string = str(number)
+    digits = len(str(number))
+    for i in range(digits):
+        calculated_value += int(input_string[i]) ** digits
+    if calculated_value == int(number):
+        return "YES"
+    else:
+        return "NO"
 
-   print("calculated value=", calculated_value)
-#    if calculated_value == number:
-#     return("YES")
-#    else:
- #    return("NO")
 
-
-armstrong_number(input_value)
+print(armstrong_number(input_number))
