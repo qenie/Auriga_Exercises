@@ -1,5 +1,5 @@
-# This project defines function to check if the number is Armstrong number
-# Armstrong example of number is 153 = 1^3+5^3+3^3 (where 3 is number digits)
+"""" This program defines function to check if the input number is Armstrong number.
+ Armstrong example of number is 153 = 1^3+5^3+3^3 (where 3 is number digits) """
 
 input_number = input("Enter a number: ")
 
