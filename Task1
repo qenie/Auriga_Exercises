@@ -1,0 +1,25 @@
+symbols_counter = 0
+good_boy_counter = 0
+bad_boy_counter = 0
+santa_counter = 0
+
+string = input("Input a string:")
+
+while symbols_counter < len(string):
+    if string[symbols_counter] == "d":
+       symbols_counter += 1
+       santa_counter += 1
+
+    elif string[symbols_counter] == '=' and string[symbols_counter+1] == 'o':
+            bad_boy_counter += 1
+            symbols_counter += 2
+    elif string[symbols_counter] == 'o' and string[symbols_counter+1] == '=':
+            good_boy_counter += 1
+            symbols_counter += 2
+    else:
+        symbols_counter += 1
+
+print("Good boys:", good_boy_counter)
+print("Bad boys:", bad_boy_counter)
+if santa_counter == 0:
+    print("But there is no Santa around")
