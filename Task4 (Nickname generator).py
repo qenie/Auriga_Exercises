@@ -44,4 +44,4 @@ word2_number = int(input_date_of_birth[6]+input_date_of_birth[7])
 word1 = str(biggest_number(word1_number)) + words_dictionary[biggest_number(word1_number)]
 word2 = str(smallest_number(word2_number)) + words_dictionary[smallest_number(word2_number)]
 
-print("Nickname is: ", word1, "", word2)
+print("Nickname is: {0} {1}".format(word1, word2))
