@@ -1,6 +1,6 @@
-# The task is to find amount of "Bad boys" (represented  by '=o' symbols) and "Good boys" (represented by 'o='
-# symbols) in the given string. There is also Santa (represented by 'd' symbol) but actually 'd' symbol treated just
-# like other symbols (not sufficient).
+""""  The task is to find amount of "Bad boys" (represented  by '=o' symbols) and "Good boys" (represented by 'o='
+ symbols) in the given string. There is also Santa (represented by 'd' symbol) but actually 'd' symbol treated just
+ like other symbols (not sufficient). """
 
 symbols_counter = 0  # just a counter that changes from 0 to len(input_string)
 good_boy_counter = 0
