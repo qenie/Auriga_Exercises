@@ -14,8 +14,7 @@ while symbols_counter < string_length:
     if string[symbols_counter] == "d":
         symbols_counter += 1
         santa_counter += 1
-
-    elif symbols_counter + 1 > string_length-1:
+    elif symbols_counter + 1 > string_length-1:  # check that symbols_counter+1 will not out of array of input_string
         break
     elif string[symbols_counter] == '=' and string[symbols_counter+1] == 'o':
         bad_boy_counter += 1
