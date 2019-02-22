@@ -1,5 +1,5 @@
-# This program will find Armstrong numbers in the range of [1, N], where N input munber
-# Armstrong example of number is 153 = 1^3+5^3+3^3 (where 3 is number digits)
+"""" This program finds Armstrong numbers in the range of [1, N], where N input number.
+ Example of Armstrong number is 153 = 1^3+5^3+3^3 (where 3 is number digits) """
 
 
 def armstrong_number(number):
