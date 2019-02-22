@@ -12,8 +12,7 @@ input_sting = input("Enter string:")
 
 
 def letter_meaning(symbol):
-
-    return alphabet.index(symbol)+1  # Real position starts from 1 not 0
+    return alphabet.index(symbol)+1  # Real symbol position starts from 1 not 0
 
 
 def quick_sum(string):
@@ -28,4 +27,4 @@ def quick_sum(string):
     return calculated_sum
 
 
-print(quick_sum(input_sting))
+print("Quick sum is:", quick_sum(input_sting))
