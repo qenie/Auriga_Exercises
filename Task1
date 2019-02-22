@@ -1,4 +1,4 @@
-# The task was to find amount of "Bad boys" (represented  by 'o=' symbols) and "Good boys" (represented by '=o'
+# The task was to find amount of "Bad boys" (represented  by '=o' symbols) and "Good boys" (represented by 'o='
 # symbols) in the given string. There is also Santa (represented by 'd' symbol) but actually 'd' symbol treated just
 # like other symbols (not sufficient).
 
@@ -8,18 +8,21 @@ bad_boy_counter = 0
 santa_counter = 0
 
 string = input("Input a string:")
+string_length = len(string)  # to check array boundaries
 
-while symbols_counter < len(string):
+while symbols_counter < string_length:
     if string[symbols_counter] == "d":
-       symbols_counter += 1
-       santa_counter += 1
+        symbols_counter += 1
+        santa_counter += 1
 
+    elif symbols_counter + 1 > string_length-1:
+        break
     elif string[symbols_counter] == '=' and string[symbols_counter+1] == 'o':
-            bad_boy_counter += 1
-            symbols_counter += 2
+        bad_boy_counter += 1
+        symbols_counter += 2
     elif string[symbols_counter] == 'o' and string[symbols_counter+1] == '=':
-            good_boy_counter += 1
-            symbols_counter += 2
+        good_boy_counter += 1
+        symbols_counter += 2
     else:
         symbols_counter += 1
 
