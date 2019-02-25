@@ -1,4 +1,6 @@
-# This program converts arabic numerals to roman numerals
+""" This program converts arabic numerals to roman numerals
+    It will work correctly until 3999.
+    After 3999 numbers go with different rules. """
 
 def conversion(number):
     output_string = ''
