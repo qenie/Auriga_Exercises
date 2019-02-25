@@ -38,5 +38,5 @@ def conversion(number):
 
 
 print("We will convert arabic numeral to roman numeral.")
-input_number = int(input("Enter a number to convert to roman:"))
+input_number = int(input("Enter a number to convert to roman (up to 3999):"))
 print(conversion(input_number))
