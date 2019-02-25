@@ -13,7 +13,7 @@ def conversion(number):
                      8: "VIII",    18: "XVIII",    28: "C",        38: "MM",
                      9: "IX",      19: "XIX",      29: "CC",       39: "MMM",
                      10: "X",      20: "XX",       30: "CCC"}
-    
+
     # create a tuple with indexes to relate to roman_numeral tuple
     roman_index = {1: 1,  11: 11,  21: 30,  31: 400,
                    2: 2,  12: 12,  22: 40,  32: 500,
@@ -31,6 +31,7 @@ def conversion(number):
         while temp_number - roman_index[i] >= 0:
             temp_number -= roman_index[i]
             output_string += roman_numeral[i]
+
     return output_string
 
 
