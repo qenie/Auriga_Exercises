@@ -4,7 +4,7 @@
 
 def conversion(number):
     output_string = ''
-    # create a tuple to define roman numerals
+    # create a dictionary to define roman numerals
     roman_numeral = {1: "I",       11: "XI",       21: "XXX",      31: "CD",
                      2: "II",      12: "XII",      22: "XL",       32: "D",
                      3: "III",     13: "XIII",     23: "L",        33: "DC",
@@ -16,7 +16,7 @@ def conversion(number):
                      9: "IX",      19: "XIX",      29: "CC",       39: "MMM",
                      10: "X",      20: "XX",       30: "CCC"}
 
-    # create a tuple with indexes to relate to roman_numeral tuple
+    # create a dictionary with indexes to relate to roman_numeral tuple
     roman_index = {1: 1,  11: 11,  21: 30,  31: 400,
                    2: 2,  12: 12,  22: 40,  32: 500,
                    3: 3,  13: 13,  23: 50,  33: 600,
